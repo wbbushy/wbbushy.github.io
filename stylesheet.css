@@ -1,10 +1,67 @@
+body {
+  font-family: helvetica neue;
+}
+
+#hr-top {
+  display: block;
+  height: 3px;
+  border: 1px solid;
+  border-color: #028482;
+  background-color: #028482;
+  width: 90%;
+}
+
+#hr-bottom {
+  display: block;
+  height: 1.5px;
+  border: 1px solid;
+  border-color: #028482;
+  background-color: #028482;
+  width: 90%;
+}
+
 #sidebar {
-  border: 3px solid red;
   width: 18%;
   float: left;
 }
 
 #resume {
-  border: 3px solid green;
+  padding-top: 6%;
   margin-left: 18%;
 }
+
+h1 {
+  color: #028482;
+  font-family: copperplate;
+}
+
+#city {
+  color: #028482;
+  font-family: helvetica neue;
+}
+
+#phone {
+  color: #028882;
+  font-family: helvetica neue;
+  font-size: 14px;
+}
+
+h3 {
+  color: #028482;
+  font-family: helvetica neue;
+  font-size: 16px;
+}
+
+h4 {
+  font-family: helvetica neue;
+  font-size: 16px;
+  color: #666666;
+}
+
+
+
+
+
+
+
+
