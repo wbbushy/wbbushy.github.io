@@ -1,68 +1,490 @@
+@font-face {
+  font-family: 'Open Sans 400';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url('http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTaOCaDZZVv73zpFSwE4Va2k.woff2') format('woff2');
+}
+
 body {
-  font-family: helvetica neue;
-}
-
-#hr-top {
-  display: block;
-  height: 3px;
-  border: 1px solid;
-  border-color: #028482;
-  background-color: #028482;
-  width: 90%;
-}
-
-#hr-bottom {
-  display: block;
-  height: 1.5px;
-  border: 1px solid;
-  border-color: #028482;
-  background-color: #028482;
-  width: 90%;
-}
-
-#sidebar {
-  width: 18%;
-  float: left;
-}
-
-#resume {
-  padding-top: 6%;
-  margin-left: 18%;
-  padding-left: 4%;
+  width: 100%;
+  margin: 0 auto;
+  height:100%;
+  margin:0;
+  padding:0;
 }
 
 h1 {
-  color: #028482;
   font-family: copperplate;
+  color: white;
+  font-size: 56px
 }
 
-#city {
-  color: #028482;
-  font-family: helvetica neue;
+h2 {
+  font-family: copperplate;
+  color: white;
+  font-size: 48px;
 }
 
-#phone {
-  color: #028882;
-  font-family: helvetica neue;
-  font-size: 14px;
+p {
+  font-family: sans-serif;
 }
 
-h3 {
-  color: #028482;
-  font-family: helvetica neue;
+ul {
+  list-style-type: none;
+  margin-left: 70px;
+}
+
+/*landing*/
+
+#landing {
+  padding: 0px;
+  margin: 0px;
+  height: 699px;
+  background: no-repeat center right fixed url('resources/images/landing.jpg');
+  background-size: cover;
+  text-align: center;
+}
+
+
+
+#name {
+  text-align: center;
+  float: none;
+  display: inline-block;
+  height: 200px;
+  width: 65%;
+  margin-top: 55px;
+}
+
+#landing hr {
+  display: block;
+  width: 80%;
+}
+
+/*profile*/
+
+#profile {
+  padding: 0;
+  margin: 0;
+  height: 699px;
+  width: 100%;
+  background-color: lavender;
+}
+
+#profile-title-div {
+  padding: 30px;
+}
+
+#profile h2 {
+  font-family: copperplate;
+  color: purple;
+}
+
+#profile h3 {
+  font-family: copperplate;
+  font-family: 'Open Sans 400';
+  color: purple;
+}
+
+#profile h5 {
+  font-family: 'Open Sans';
+}
+
+#profile p {
+  font-family: 'Open Sans 400';
+}
+
+#profile-content {
+  height: 400px;
+}
+
+#profile hr {
+  display: block;
+  width: 80%;
+}
+
+#about-me {
+  width: 20%;
+  height: 400px;
+  float: left;
+  margin-left: 15%
+}
+
+#pic {
+  width: 30%;
+  height: 400px;
+  float: left;
+  text-align: center;
+}
+
+#details {
+  width: 30%;
+  height: 400px;
+  float: right;
+  margin-right: 5%
+}
+
+#profile h2 {
+  margin-top: 0px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+#me {
+  width: 300px;
+  height: 300px;
+  border: grey 5px solid;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+}
+
+/*experience*/
+
+#experience {
+  padding: 0;
+  margin: 0;
+  height: 1550px;
+  width: 100%;
+  background-color: white;
+}
+
+#experience p  {
+  margin-left: 50px;
+  font-family: 'Open Sans 400';
+}
+
+#experience h2 {
+  text-align: center;
+  font-family: copperplate;
+  color: black;
+  font-size: 56px;
+  color: purple ;
+}
+
+#experience h4 {
+  font-family: 'Open Sans 400';
+  margin-bottom: 0px;
+  margin-top: 5px;
+  margin-left: 50px;
+  font-size: 22px;
+}
+
+#experience h5 {
+  margin-left: 50px;
   font-size: 16px;
+  font-family: 'Open Sans 400';
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
-h4 {
-  font-family: helvetica neue;
+#experience h6 {
+  margin-left: 50px;
   font-size: 16px;
-  color: #666666;
+  font-family: 'Open Sans';
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
+#experience ul {
+  font-family: 'Open Sans 400';
+  list-style: none;
+  padding-left: 0px;
+  margin-left: 50px;
+}
+
+#experience-master-title-div {
+  margin-top: 0px;
+  padding-top: 50px;
+}
+
+#hr-experience-master-title {
+  display: block;
+  width: 80%;
+}
+
+#skills {
+  width: 50%;
+  display: inline-block;
+  padding-left: 7.5%;
+  margin-left: 27.5%;
+}
+
+.experience-title-div {
+  width: 27.5%;
+  text-align: right;
+  margin-right: 72.5%;
+  padding-bottom: 0px;
+}
+
+.hr-experience-title {
+  display: inline-block;
+  height: 1px;
+  border: 1px solid;
+  border-color: #787878;
+  background-color: #787878;
+  width: 20%;
+  margin-left: 50px;
+}
+
+.experience-title {
+  margin-left: 50px;
+  font-family: copperplate;
+  font-size: 36px;
+  color: purple;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+#dbc {
+  width: 100%;
+}
+
+#dbc-title {
+  width: 27.5%;
+  text-align: right;
+  float: left;
+}
+
+#dbc-summary {
+  width: 50%;
+  display: inline-block;
+  padding-left: 7.5%;
+}
+
+#twok {
+  width: 100%;
+}
+
+#twok-title {
+  width: 27.5%;
+  text-align: right;
+  float: left;
+}
+
+#twok-summary {
+  width: 50%;
+  display: inline-block;
+  padding-left: 7.5%;
+}
+
+#KGO {
+  width: 100%;
+}
+
+#KGO-title {
+  width: 27.5%;
+  text-align: right;
+  float: left;
+}
+
+#KGO-summary {
+  width: 50%;
+  display: inline-block;
+  padding-left: 7.5%;
+}
+
+#education {
+  padding-bottom: 50px;
+}
+
+#ups {
+  width: 100%;
+}
+
+#ups-title {
+  width: 27.5%;
+  text-align: right;
+  float: left;
+}
+
+#ups-summary {
+  width: 50%;
+  display: inline-block;
+  padding-left: 7.5%;
+}
+
+/*projects*/
+
+#projects {
+  padding: 0;
+  margin: 0;
+  height: 699px;
+  width: 100%;
+  background-color: lavender;
+}
+
+#projects-title {
+  margin-top: 0px;
+  padding-top: 50px;
+}
+
+#projects h2 {
+  text-align: center;
+  font-family: copperplate;
+  color: black;
+  font-size: 56px;
+  color: purple ;
+}
+
+#projects p {
+  margin-left: 26.5%;
+}
+
+#projects h3 {
+  margin-left: 26.5%;
+}
+
+#projects hr {
+  width: 80%;
+}
+
+#project-column-one {
+  width: 50%;
+  float: left;
+  height: 290px;
+}
+
+#project-column-two {
+  width: 50%;
+  float: right;
+  height: 290px;
+
+}
+
+#project-one {
+  text-align: center;
+}
+
+#project-two {
+  text-align: center;
+}
+
+#projects a {
+}
+
+#shape-tango {
+  width: 300px;
+  height: 200px;
+}
+
+#color-influence {
+  width: 300px;
+  height: 200px;
+}
+
+/*contact*/
+
+#contact {
+  padding: 0;
+  margin: 0;
+  height: 699px;
+  width: 100%;
+  background-color: #383838;
+}
+
+.title {
+  margin-left: 50px;
+  font-family: copperplate;
+  font-size: 36px;
+  color: grey;
 }
 
 
+#contact-title {
+  padding-top: 50px;
+  margin-top: 0px;
+  text-align: center;
+  color:
+
+}
+#contact-hr {
+  display: block;
+  height: 1px;
+  border: 1px solid;
+  border-color: #787878;
+  background-color: #787878;
+  width: 90%;
+  margin-left: 50px;
+}
+
+#links {
+  margin-top: 100px;
+}
 
 
+#linkedin {
+  display: inline-block;
+  background: url('resources/images/linkedin.png') no-repeat;
+  height: 96px;
+  width: 96px;
+  margin-right: 20px;
+  margin-bottom: -20px;
+}
+
+#links a {
+  font-size: 20px;
+}
+
+#links a:link {
+  color: white;
+}
+
+#links a:visited {
+  color: white;
+}
+
+#links a:hover {
+  color: grey;
+}
+
+#github {
+  display: inline-block;
+  background: url('resources/images/github.png') no-repeat;
+  height: 96px;
+  width: 96px;
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: -20px;
+}
 
 
+#first-column {
+  float: left;
+  width: 50%;
+}
 
+#second-column {
+  float: right;
+  width: 50%;
+}
 
+#email {
+  display: inline-block;
+  background: url('resources/images/mail.png') no-repeat;
+  height: 96px;
+  width: 96px;
+  margin-right: 20px;
+  margin-bottom: -20px;
+}
+
+#facebook {
+  display: inline-block;
+  background: url('resources/images/facebook.png') no-repeat;
+  height: 96px;
+  width: 96px;
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: -20px;
+}
+#links li {
+  color: white;
+  font-family: sans-serif;
+}
