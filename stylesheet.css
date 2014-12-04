@@ -21,13 +21,13 @@ body {
 }
 
 h1 {
-  font-family: copperplate;
+  font-family: 'Open Sans';
   color: white;
   font-size: 56px
 }
 
 h2 {
-  font-family: copperplate;
+  font-family: 'Open Sans';
   color: white;
   font-size: 48px;
 }
@@ -73,7 +73,7 @@ ul {
 #profile {
   padding: 0;
   margin: 0;
-  height: 699px;
+  height: 555px;
   width: 100%;
   background-color: lavender;
 }
@@ -83,17 +83,28 @@ ul {
 }
 
 #profile h2 {
-  font-family: copperplate;
+  text-align: center;
+  margin-top: 0px;
+  font-family: 'Open Sans';
   color: purple;
+  font-size: 56px;
+  margin-bottom: 15px;
 }
 
 #profile h3 {
-  font-family: copperplate;
-  font-family: 'Open Sans 400';
+  font-size: 36px;
+  font-family: 'Open Sans';
   color: purple;
 }
 
+#profile h4 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-family: 'Open Sans 400';
+}
+
 #profile h5 {
+  margin-top: 0px;
   font-family: 'Open Sans';
 }
 
@@ -103,6 +114,7 @@ ul {
 
 #profile-content {
   height: 400px;
+  width: 100%;
 }
 
 #profile hr {
@@ -114,11 +126,12 @@ ul {
   width: 20%;
   height: 400px;
   float: left;
-  margin-left: 15%
+  margin-left: 20%;
+  margin-top: -25px;
 }
 
 #pic {
-  width: 30%;
+  width: 20%;
   height: 400px;
   float: left;
   text-align: center;
@@ -128,22 +141,18 @@ ul {
   width: 30%;
   height: 400px;
   float: right;
-  margin-right: 5%
+  margin-right: 8%;
+  margin-top: -25px;
 }
 
-#profile h2 {
-  margin-top: 0px;
-  padding-top: 50px;
-  text-align: center;
-}
 
 #me {
-  width: 300px;
-  height: 300px;
-  border: grey 5px solid;
-  border-radius: 150px;
-  -webkit-border-radius: 150px;
-  -moz-border-radius: 150px;
+  width: 200px;
+  height: 200px;
+  border: grey 7px solid;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
 }
 
 /*experience*/
@@ -163,10 +172,11 @@ ul {
 
 #experience h2 {
   text-align: center;
-  font-family: copperplate;
+  font-family: 'Open Sans';
   color: black;
   font-size: 56px;
   color: purple ;
+  margin-bottom: 15px;
 }
 
 #experience h4 {
@@ -177,9 +187,9 @@ ul {
   font-size: 22px;
 }
 
-#experience h5 {
+.employee {
   margin-left: 50px;
-  font-size: 16px;
+  font-size: 20px;
   font-family: 'Open Sans 400';
   margin-top: 5px;
   margin-bottom: 0px;
@@ -213,14 +223,13 @@ ul {
 #skills {
   width: 50%;
   display: inline-block;
-  padding-left: 7.5%;
-  margin-left: 27.5%;
+  padding-left: 11%;
+  margin-left: 25%;
 }
 
 .experience-title-div {
-  width: 27.5%;
+  width: 25%;
   text-align: right;
-  margin-right: 72.5%;
   padding-bottom: 0px;
 }
 
@@ -236,19 +245,28 @@ ul {
 
 .experience-title {
   margin-left: 50px;
-  font-family: copperplate;
+  font-family: 'Open Sans';
   font-size: 36px;
   color: purple;
   margin-top: 20px;
   margin-bottom: 0px;
 }
 
+.position {
+  margin-left: 50px;
+  font-size: 16px;
+  font-family: 'Open Sans 400';
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
 #dbc {
   width: 100%;
+  padding-top: 30px;
 }
 
 #dbc-title {
-  width: 27.5%;
+  width: 25%;
   text-align: right;
   float: left;
 }
@@ -256,15 +274,16 @@ ul {
 #dbc-summary {
   width: 50%;
   display: inline-block;
-  padding-left: 7.5%;
+  padding-left: 11%;
 }
 
 #twok {
   width: 100%;
+  padding-top: 30px;
 }
 
 #twok-title {
-  width: 27.5%;
+  width: 25%;
   text-align: right;
   float: left;
 }
@@ -272,15 +291,16 @@ ul {
 #twok-summary {
   width: 50%;
   display: inline-block;
-  padding-left: 7.5%;
+  padding-left: 11%;
 }
 
 #KGO {
   width: 100%;
+  padding-top: 30px;
 }
 
 #KGO-title {
-  width: 27.5%;
+  width: 25%;
   text-align: right;
   float: left;
 }
@@ -288,7 +308,7 @@ ul {
 #KGO-summary {
   width: 50%;
   display: inline-block;
-  padding-left: 7.5%;
+  padding-left: 11%;
 }
 
 #education {
@@ -300,7 +320,7 @@ ul {
 }
 
 #ups-title {
-  width: 27.5%;
+  width: 25%;
   text-align: right;
   float: left;
 }
@@ -308,7 +328,7 @@ ul {
 #ups-summary {
   width: 50%;
   display: inline-block;
-  padding-left: 7.5%;
+  padding-left: 11%;
 }
 
 /*projects*/
@@ -328,10 +348,11 @@ ul {
 
 #projects h2 {
   text-align: center;
-  font-family: copperplate;
+  font-family: 'Open Sans';
   color: black;
   font-size: 56px;
   color: purple ;
+  margin-bottom: 15px;
 }
 
 #projects p {
@@ -350,34 +371,37 @@ ul {
   width: 50%;
   float: left;
   height: 290px;
+  padding-top: 20px;
 }
 
 #project-column-two {
   width: 50%;
   float: right;
   height: 290px;
-
+  padding-top: 20px;
 }
 
 #project-one {
-  text-align: center;
+  text-align: right;
+  padding-right: 10px;
 }
 
 #project-two {
-  text-align: center;
+  text-align: left;
+  padding-left: 10px;
 }
 
 #projects a {
 }
 
 #shape-tango {
-  width: 300px;
-  height: 200px;
+  width: 450px;
+  height: 325px;
 }
 
 #color-influence {
-  width: 300px;
-  height: 200px;
+  width: 450px;
+  height: 325px;
 }
 
 /*contact*/
@@ -387,12 +411,12 @@ ul {
   margin: 0;
   height: 699px;
   width: 100%;
-  background-color: #383838;
+  background-color: #80BEFF;
 }
 
 .title {
   margin-left: 50px;
-  font-family: copperplate;
+  font-family: 'Open Sans';
   font-size: 36px;
   color: grey;
 }
@@ -402,17 +426,12 @@ ul {
   padding-top: 50px;
   margin-top: 0px;
   text-align: center;
-  color:
+  margin-bottom: 15px;
 
 }
 #contact-hr {
-  display: block;
-  height: 1px;
-  border: 1px solid;
-  border-color: #787878;
-  background-color: #787878;
-  width: 90%;
-  margin-left: 50px;
+  text-align: center;
+  width: 80%;
 }
 
 #links {
@@ -423,14 +442,13 @@ ul {
 #linkedin {
   display: inline-block;
   background: url('resources/images/linkedin.png') no-repeat;
-  height: 96px;
-  width: 96px;
-  margin-right: 20px;
-  margin-bottom: -20px;
+  height: 32px;
+  width: 32px;
+
 }
 
 #links a {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 #links a:link {
@@ -448,11 +466,8 @@ ul {
 #github {
   display: inline-block;
   background: url('resources/images/github.png') no-repeat;
-  height: 96px;
-  width: 96px;
-  margin-right: 20px;
-  margin-top: 30px;
-  margin-bottom: -20px;
+  height: 32px;
+  width: 32px;
 }
 
 
@@ -461,30 +476,44 @@ ul {
   width: 50%;
 }
 
+#first-column li {
+  margin-left: 40%;
+  margin-top: 10px;
+}
+
 #second-column {
   float: right;
   width: 50%;
 }
 
+#second-column li {
+  margin-left: 5%;
+  margin-top: 10px;
+}
+
 #email {
   display: inline-block;
-  background: url('resources/images/mail.png') no-repeat;
-  height: 96px;
-  width: 96px;
-  margin-right: 20px;
-  margin-bottom: -20px;
+  background: url('resources/images/email.png') no-repeat;
+  height: 32px;
+  width: 32px;
 }
 
 #facebook {
   display: inline-block;
   background: url('resources/images/facebook.png') no-repeat;
-  height: 96px;
-  width: 96px;
-  margin-right: 20px;
-  margin-top: 30px;
-  margin-bottom: -20px;
+  height: 32px;
+  width: 32px;
 }
+
+#links {
+  padding-bottom: 200px;
+}
+
 #links li {
   color: white;
   font-family: sans-serif;
+}
+
+#bottom {
+  width: 80%;
 }
