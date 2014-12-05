@@ -4,10 +4,29 @@
     <title>Butler Bushyhead</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <script src="jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="waypoints.min.js"></script>
     <script type="text/javascript" src="application.js"></script>
   </head>
 
   <body>
+
+    <ul id="nav">
+      <li id='landing-nav-li'>
+        <a  id='landing-nav' href='#landing'>Landing</a>
+      </li>
+      <li id='profile-nav-li'>
+        <a id='profile-nav' href='#profile'>Profile</a>
+      </li>
+      <li id='experience-nav-li'>
+        <a id='experience-nav' href='#experience'>Experience</a>
+      </li >
+      <li id='projects-nav-li'>
+        <a id='projects-nav' href='#projects'>Projects</a>
+      </li>
+      <li id='contact-nav-li'>
+        <a id='contact-nav' href='#contact'>Contact</a>
+      </li>
+    </ul>
 
     <div class='container' id="landing">
       <div id='name'>
@@ -24,8 +43,8 @@
         <hr>
       </div>
 
-<!--       <div id='profile-subt-title'>
-      </div> -->
+
+      <!-- <div id='profile-subt-title'> -->
 
       <div id='profile-content'>
 
@@ -49,7 +68,6 @@
         </div>
 
       </div>
-
     </div>
 
     <div class='container' id='experience'>
@@ -58,7 +76,6 @@
 
       <div class='experience-title-div'>
         <h3 class='experience-title'>Skills</h3>
-          <!-- <hr class='hr-experience-title'> -->
       </div>
 
       <div id='skills'>
@@ -67,19 +84,18 @@
 
       <div class='experience-title-div'>
         <h3 class='experience-title'>Work</h3>
-        <!-- <hr class='hr-experience-title'> -->
       </div>
 
       <div id='jobs'>
         <div id='dbc'>
           <div id='dbc-title'>
-          <h5 class='employee'>Dev Bootcamp</h5>
-          <h6>2014</h6>
+            <h5 class='employee'>Dev Bootcamp</h5>
+            <h6>2014</h6>
           </div>
           <div id='dbc-summary'>
             <h5 class='position'>Recent Graduate at Dev Bootcamp</h5>
             <p>DevBootCamp is an intensive program for web development, with an emphasis on Ruby on Rails which I am a proud graduate of. This is where I really accelerated my learning fo all things coding. This expereince was one of the most rewarding, hard, and demanding of my life.</p>
-            </div>
+          </div>
         </div>
         <div id='twok'>
           <div id='twok-title'>
@@ -99,7 +115,7 @@
           <div id='KGO-summary'>
             <h5 class='position'>Production Assistant</h5>
             <p>I would wake up mornings at 2:30am to help put on the news at the local ABC station in San Francisco. The fast pace and tight knit teamwork helped keep me going in the wee hours, though I don't think I ever really got used them.</p>
-            </div>
+          </div>
         </div>
       </div>
 
@@ -107,21 +123,25 @@
 
         <div class='experience-title-div'>
           <h3 class='experience-title'>Education</h3>
-          <!-- <hr class='hr-experience-title'> -->
         </div>
 
         <div id='ups'>
+
           <div id='ups-title'>
             <h5 class='employee'>University of Puget Sound</h5>
             <h6>2005-2009</h6>
           </div>
+
           <div id='ups-summary'>
             <h5 class='position'>B.A. Communication Studies</h5>
             <p>Lambda Pi Eta Honors Society</p>
           </div>
-        </div>
 
+        </div>
       </div>
+
+    </div>
+
 
 
     <div class='container' id='projects'>
@@ -144,7 +164,6 @@
           </a>
         </div>
       </div>
-
     </div>
 
     <div class='container' id='contact'>
