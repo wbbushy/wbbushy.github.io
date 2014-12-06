@@ -132,7 +132,7 @@ ul {
   text-align: center;
   margin-top: 0px;
   font-family: 'Open Sans';
-  color: purple;
+  color: #686466;
   font-size: 56px;
   margin-bottom: 15px;
 }
@@ -140,7 +140,7 @@ ul {
 #profile h3 {
   font-size: 36px;
   font-family: 'Open Sans';
-  color: purple;
+  color: #686466;
 }
 
 #profile h4 {
@@ -155,7 +155,7 @@ ul {
 }
 
 #profile p {
-  font-family: 'Open Sans 400';
+  font-family: 'Open Sans';
 }
 
 #profile-content {
@@ -213,7 +213,7 @@ ul {
 
 #experience p  {
   margin-left: 50px;
-  font-family: 'Open Sans 400';
+  font-family: 'Open Sans';
 }
 
 #experience h2 {
@@ -397,7 +397,7 @@ ul {
   font-family: 'Open Sans';
   color: black;
   font-size: 56px;
-  color: purple ;
+  color: teal;
   margin-bottom: 15px;
 }
 
