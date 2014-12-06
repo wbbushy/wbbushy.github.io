@@ -427,7 +427,7 @@ ul {
   padding-top: 20px;
 }
 
-#project-one {
+/*#project-one {
   text-align: right;
   padding-right: 10px;
 }
@@ -435,19 +435,77 @@ ul {
 #project-two {
   text-align: left;
   padding-left: 10px;
-}
+}*/
 
 #projects a {
 }
 
-#shape-tango {
+#shape-tango-div {
   width: 450px;
   height: 325px;
+  float: right;
+  padding-right: 10px;
+  position: relative;
+}
+
+#shape-tango-div:after {
+  font-family: 'Open Sans 400';
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+  content:'Shape Tango is a small project to practice animation in HTML canvas. It is modeled after a project done with Kinetic.js, but without using said library.';
+  position:absolute;
+  width:100%; height:100%;
+  top:0; left:0;
+  background:rgba(128,0,128,0.95);
+  opacity:0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+#shape-tango-div:hover:after {
+  opacity:1;
+}
+
+#shape-tango {
+  width: 100%;
+  vertical-align: top;
+  height: 100%;
+}
+
+#color-influence-div {
+  width: 450px;
+  height: 325px;
+  float: left;
+  padding-left: 10px;
+  position: relative;
+}
+
+#color-influence-div:after {
+  font-family: 'Open Sans 400';
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+  content:'Color Influence is a simple project to practice manipulating DOM elements. Clicking on a sqaure will turn its neighbors closer to the original color of the sqaure being clicked.';
+  position:absolute;
+  width:100%; height:100%;
+  top:0; left:0;
+  background:rgba(128,0,128,0.95);
+  opacity:0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+#color-influence-div:hover:after {
+  opacity:1;
 }
 
 #color-influence {
-  width: 450px;
-  height: 325px;
+  width: 100%;
+  vertical-align: top;
+  height: 100%;
 }
 
 /*contact*/
