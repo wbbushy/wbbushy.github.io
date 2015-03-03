@@ -1,4 +1,4 @@
-@media (min-width : 320px) and (max-width: 768px) {
+   @media (min-width : 320px) and (max-width: 768px) {
 
   @font-face {
   font-family: 'Open Sans 400';
@@ -82,14 +82,10 @@
   #profile {
     padding: 0;
     margin: 0;
-    height: 55em;
     width: 100%;
     background-color: lavender;
   }
 
-  #profile-title-div {
-    padding: 30px;
-  }
 
   #profile h2 {
     text-align: center;
@@ -129,8 +125,8 @@
   }
 
   #profile-content {
-    height: 55em;
     width: 100%;
+    overflow: hidden;
   }
 
   #profile hr {
@@ -143,7 +139,6 @@
     width: 20%;
     height: 18em;
     margin: 0 auto;
-    margin-top: -25px;
     min-width: 200px;
     text-align: center;
   }
@@ -159,8 +154,8 @@
     text-align: center;
     float: left;
     width: 100%;
-    height: 5em;
     margin-top: -5em;
+    margin-bottom: 5em;
 
   }
 
@@ -178,9 +173,7 @@
 
   #experience {
     padding: 0;
-    margin: 0;
-    height: 175em;
-    min-height: 88em;
+    margin: 0 0 5em 0;
     width: 100%;
     background-color: white;
   }
@@ -356,10 +349,10 @@
   #projects {
     padding: 0;
     margin: 0;
-    height: 100vh;
     min-height: 500px;
     width: 100%;
     background-color: #B1E1E9;
+    overflow: hidden;
   }
 
   #projects-title {
@@ -389,28 +382,19 @@
   }
 
   #project-column-one {
-    width: 50%;
+    width: 100%;
     float: left;
     height: 290px;
     padding-top: 20px;
   }
 
   #project-column-two {
-    width: 50%;
-    float: right;
+    width: 100%;
+    float: left;
     height: 290px;
     padding-top: 20px;
   }
 
-  /*#project-one {
-    text-align: right;
-    padding-right: 10px;
-  }
-
-  #project-two {
-    text-align: left;
-    padding-left: 10px;
-  }*/
 
   #projects a {
   }
@@ -418,8 +402,7 @@
   #shape-tango-div {
     width: 300px;
     height: 200px;
-    float: right;
-    padding-right: 10px;
+    margin: auto;
     position: relative;
   }
 
@@ -428,7 +411,6 @@
     color: white;
     font-size: 20px;
     text-align: center;
-    padding-top: 10px;
     content:'Shape Tango is a small project to practice animation in HTML canvas. It is modeled after a project done with Kinetic.js, but without using said library.';
     position:absolute;
     width:100%; height:100%;
@@ -452,8 +434,7 @@
   #color-influence-div {
     width: 300px;
     height: 200px;
-    float: left;
-    padding-left: 10px;
+    margin: auto;
     position: relative;
   }
 
@@ -462,7 +443,6 @@
     color: white;
     font-size: 20px;
     text-align: center;
-    padding-top: 10px;
     content:'Color Influence is a simple project to practice manipulating DOM elements. Clicking on a sqaure will turn its neighbors closer to the original color of the sqaure being clicked.';
     position:absolute;
     width:100%; height:100%;
@@ -486,9 +466,9 @@
   /*contact*/
 
   #contact {
+    min-height: 500px;
     padding: 0;
     margin: 0;
-    height: 699px;
     width: 100%;
     background-color: #839CB5;
   }
@@ -525,7 +505,8 @@
     background: url('../resources/images/linkedin.png') no-repeat;
     height: 32px;
     width: 32px;
-
+    margin-right: 5px;
+    vertical-align: middle;
   }
 
   #links a {
@@ -549,27 +530,32 @@
     background: url('../resources/images/github.png') no-repeat;
     height: 32px;
     width: 32px;
+    margin-right: 5px;
+    vertical-align: middle;
   }
 
 
   #first-column {
     float: left;
-    width: 50%;
+    width: 100%;
   }
 
   #first-column li {
-    margin-left: 5%;
     margin-top: 10px;
   }
 
   #second-column {
-    float: right;
-    width: 50%;
+    float: left;
+    width: 100%;
   }
 
   #second-column li {
-    margin-left: 5%;
     margin-top: 10px;
+  }
+
+  #links ul {
+    padding-left: 0;
+    margin-bottom: 0;
   }
 
   #email {
@@ -577,6 +563,8 @@
     background: url('../resources/images/email.png') no-repeat;
     height: 32px;
     width: 32px;
+    margin-right: 5px;
+    vertical-align: middle;
   }
 
   #facebook {
@@ -584,6 +572,8 @@
     background: url('../resources/images/facebook.png') no-repeat;
     height: 32px;
     width: 32px;
+    margin-right: 5px;
+    vertical-align: middle;
   }
 
   #links {
