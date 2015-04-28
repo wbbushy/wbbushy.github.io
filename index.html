@@ -5,219 +5,132 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/(min-width: 1024px).css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/(min-width: 768px).css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/(min-width: 320px).css">
-    <script src="jquery-1.11.1.js"></script>
-    <script type="text/javascript" src="waypoints.min.js"></script>
-    <script type="text/javascript" src="application.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/waypoints.min.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
   </head>
-
   <body>
+    <!-- start nav -->
+    <nav id="nav">
+      <a href='#header'>
+        <div class='nav' id='nav-header'>
+          <h4>Butler Bushyhead</h4>
+        </div>
+      </a>
+      <a href='#about'>
+        <div class='nav' id='nav-about'>
+          <h4>About</h4>
+        </div>
+      </a>
+      <a href='#projects'>
+        <div class='nav' id='nav-projects'>
+          <h4>Projects</h4>
+        </div>
+      </a>
+      <a href='#contact'>
+        <div class='nav' id='nav-contact'>
+          <h4>Contact</h4>
+        </div>
+      </a>
+    </nav>
+    <!-- end nav -->
 
-    <ul id="nav">
-      <li id='landing-nav-li'>
-        <a  id='landing-nav' href='#landing'>Landing</a>
-      </li>
-      <li id='profile-nav-li'>
-        <a id='profile-nav' href='#profile'>Profile</a>
-      </li>
-      <li id='experience-nav-li'>
-        <a id='experience-nav' href='#experience'>Experience</a>
-      </li >
-      <li id='projects-nav-li'>
-        <a id='projects-nav' href='#projects'>Projects</a>
-      </li>
-      <li id='contact-nav-li'>
-        <a id='contact-nav' href='#contact'>Contact</a>
-      </li>
-    </ul>
-    <!-- /end #nav -->
-    <div class='container' id="landing">
-      <div id='name'>
-        <h1>Wm. Butler Bushyhead</h1>
-        <hr>
-        <h2>Resume</h2>
+    <!-- start header -->
+    <section id='header'>
+      <div class='container'>
+        <h1>Butler Bushyhead</h1>
       </div>
+    </section>
+    <div id='header-bot'>
     </div>
-    <div id='landing-bot'>
+    <!-- end header -->
+
+    <!-- start about -->
+    <section id='about'>
+      <div class='container'>
+        <div id='about-picture'>
+          <img id='picture'src='resources/images/me2.jpg' alt='me'>
+        </div>
+        <div id="about-content-div">
+          <h2>Yes My Name Really is William Butler Bushyhead</h2>
+          <p>I am a fullstack web developer with a passion for learning and solving puzzles.</p>
+        </div>
+      </div>
+    </section>
+    <div id='about-bot'>
     </div>
-    <!-- /end #landing -->
+    <!-- end about -->
 
-    <div class='container' id='profile'>
-
-      <div id='profile-title-div'>
-        <h2>Profile</h2>
-        <hr>
-      </div>
-
-      <div id='profile-content'>
-
-        <div id='about-me'>
-          <h3>About Me</h3>
-          <p>I am a former TV and video game producer turned Web Developer. I am in constant state of curiosity and strive to learn while working on projects that challenge and puzzle me until I have solved them. </p>
+    <!-- start projects -->
+    <section id='projects'>
+      <div class='container'>
+        <h3>Projects</h3>
+        <div class='span-3'>
+          <a id='col-1' href="http://shapetango.herokuapp.com/" target="_blank">
+            <img class='project-image'id='tango' src='resources/images/tango.jpg' alt='shape-tango'>
+          </a>
         </div>
-
-        <div id='pic'>
-          <img id='me' src='resources/images/me2.JPG' >
+        <div class='span-3'>
+          <a id='col-2' href="http://definedapp.herokuapp.com/" target="_blank">
+            <img class='project-image' id='defined' src='resources/images/books.jpg' alt='defined-app'>
+          </a>
         </div>
-
-        <div id='details'>
-          <h3>The Facts</h3>
-          <h4>Name</h4>
-          <h5>William Butler Bushyhead</h5>
-          <h4>Age</h4>
-          <h5>28</h5>
-          <h4>Location</h4>
-          <h5>San Francisco, CA</h5>
-        </div>
-
-      </div>
-    </div>
-
-    <div class='container' id='experience'>
-      <h2 id='experience-master-title-div'>Experience</h2>
-      <hr id='hr-experience-master-title'>
-
-      <div class='experience-title-div'>
-        <h3 class='experience-title'>Skills</h3>
-      </div>
-
-      <div id='skills'>
-        <h4>Ruby, JavaScript, Ruby on Rails, JQuery, HTML5, CSS3, Git workflow, pair programming, Testing (Rspec), AJAX, APIs</h4>
-      </div>
-
-      <div class='experience-title-div'>
-        <h3 class='experience-title'>Work</h3>
-      </div>
-
-      <div id='jobs'>
-        <div id='dbc'>
-          <div id='dbc-title'>
-            <h5 class='employee'>Dev Bootcamp</h5>
-            <h6>2014</h6>
-          </div>
-          <div id='dbc-summary'>
-            <h5 class='position'>Recent Graduate at Dev Bootcamp</h5>
-            <p>DevBootCamp is an intensive program for web development, with an emphasis on Ruby on Rails which I am a proud graduate of. This is where I really accelerated my learning fo all things coding. This expereince was one of the most rewarding, hard, and demanding of my life.</p>
-          </div>
-        </div>
-        <div id='twok'>
-          <div id='twok-title'>
-            <h5 class='employee'>2k Marin</h5>
-            <h6>2013</h6>
-          </div>
-          <div id='twok-summary'>
-            <h5 class='position'>Production Assistant</h5>
-            <p>2K Marin was a video game development studio where I worked as a Production Assistant on the creation of the game The Bureau. Being apart of a creative process and working with a team well over a hundred people was the highlight of this experience.</p>
-          </div>
-        </div>
-        <div id='KGO'>
-          <div id='KGO-title'>
-            <h5 class='employee'>KGO TV</h5>
-            <h6>2012-2013</h6>
-          </div>
-          <div id='KGO-summary'>
-            <h5 class='position'>Production Assistant</h5>
-            <p>I would wake up mornings at 2:30am to help put on the news at the local ABC station in San Francisco. The fast pace and tight knit teamwork helped keep me going in the wee hours, though I don't think I ever really got used them.</p>
-          </div>
-        </div>
-      </div>
-
-      <div id='education'>
-
-        <div class='experience-title-div'>
-          <h3 class='experience-title'>Education</h3>
-        </div>
-
-        <div id='ups'>
-
-          <div id='ups-title'>
-            <h5 class='employee'>University of Puget Sound</h5>
-            <h6>2005-2009</h6>
-          </div>
-
-          <div id='ups-summary'>
-            <h5 class='position'>B.A. Communication Studies</h5>
-            <p>Lambda Pi Eta Honors Society</p>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-    <div id='experience-bot'>
-    </div>
-
-
-
-    <div class='container' id='projects'>
-
-      <h2 id='projects-title'>Projects</h2>
-      <hr>
-
-      <div id='project-column-one'>
-        <div id='project-one'>
-          <a href="http://shapetango.herokuapp.com/" target="_blank">
-            <div id='shape-tango-div'>
-              <img id='shape-tango' src='resources/images/shapetango.png' >
-            </div>
+        <div class='span-3'>
+          <a id='col-3' href="http://github.com/wbbushy/config-parser" target="_blank">
+            <img class='project-image' id='parser' src='resources/images/sort.jpg' alt='config-parser'>
           </a>
         </div>
       </div>
-
-      <div id='project-column-two'>
-        <div id='project-two'>
-          <a href="https://colorinfluence.herokuapp.com/" target="_blank">
-            <div id='color-influence-div'>
-              <img id='color-influence' src='resources/images/colorinfluence.png' >
-            </div>
-          </a>
-        </div>
-      </div>
+    </section>
+    <div id='projects-bot'>
     </div>
+    <!-- end projects -->
 
-    <div class='container' id='contact'>
-      <h1 id='contact-title'>Contact</h1>
-      <hr id="contact-hr">
-      <div id='links'>
-        <div id='first-column'>
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/wbbushyhead" target="_blank">
-                <span id="linkedin"></span>
-                  https://www.linkedin.com/in/wbbushyhead
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/wbbushy" target="_blank">
+    <!-- start contact -->
+    <section id='contact'>
+      <div class='container'>
+        <div id='contact info'>
+          <div class='span-3'>
+            <a href='http://github.com/wbbushy' target='_blank'>
+              <h5>
                 <span id="github"></span>
-                  https://github.com/wbbushy
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id='second-column'>
-          <ul>
-            <li>
-              <a href="mailto:wbbushyhead@gmail.com">
+                Github
+              </h5>
+            </a>
+          </div>
+          <div class='span-3'>
+            <a href="mailto:wbbushyhead@gmail.com">
+              <h5>
                 <span id="email"></span>
-                  wbbushyhead@gmail.com
-              </a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/wbbushyhead" target="_blank">
-                <span id="facebook"></span>
-                  https://www.facebook.com/wbbushyhead
-              </a>
-            </li>
-          </ul>
+                wbbushyhead@gmail.com
+              </h5>
+            </a>
+          </div>
+          <div class='span-3'>
+            <a href='resources/files/butler_bushyhead_resume.pdf' download>
+              <h5>
+                <span id="resume"> </span>
+                Resume
+              </h5>
+            </a>
+          </div>
+        </div>
+        <div id='social-media'>
+          <div class='mid'>
+            <a href='http://twitter.com/wbbushy' target='_blank'>
+              <span id='twitter'></span>
+            </a>
+            <a href='http://facebook.com/wbbushyhead' target='_blank'>
+              <span id='facebook'></span>
+            </a>
+            <a href='http://linkedin.com/in/wbbushyhead' target='_blank'>
+              <span id='linkedin'></span>
+            </a>
+          </div>
         </div>
       </div>
-      <hr id='bottom'>
-    </div>
-    <div id='contact-bot'>
-    </div>
-
+    </section>
+    <!-- end contact -->
 
   </body>
 </html>

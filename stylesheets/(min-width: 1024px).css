@@ -1,71 +1,64 @@
 @media (min-width : 1024px) {
 
-  @font-face {
-  font-family: 'Open Sans 400';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
-  }
-
-  @font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Open Sans Light'), local('OpenSans-Light'), url('http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTaOCaDZZVv73zpFSwE4Va2k.woff2') format('woff2');
-  }
-
   body {
-    width: 100%;
-    margin: 0 auto;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
   }
 
   h1 {
-    font-family: 'Open Sans';
+    margin: 0;
+    padding-top: 130px;
+    text-align: center;
+    font-size: 48px;
+    text-transform: uppercase;
     color: white;
-    font-size: 3.5em;
   }
 
   h2 {
-    font-family: 'Open Sans';
-    color: white;
-    font-size: 3em;
+    margin: 0;
+    padding-top: 50px;
   }
 
-  p {
-    font-family: sans-serif;
-  }
-
-  ul {
-    list-style-type: none;
-  }
-  /*nav*/
-
-  #nav {
-    width: 6em;
-    right: 2.5%;
-    position: fixed;
-    margin-top: 6.5em;
-    background-color: black;
-    list-style: none;
-    padding-left:0;
-    font-family: 'Open Sans 400';
-    border-radius: 1.5em;
-    z-index: 1;
-  }
-
-  #nav li {
-    padding-top: 1em;
-    padding-bottom: 1em;
+  h3 {
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 50px;
     text-align: center;
   }
 
+  h4 {
+    margin: 0;
+  }
+
+  h5 {
+    text-transform: uppercase;
+  }
+
+
+  .container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .span-3 {
+    width: 33%;
+    float: left;
+  }
+
+  /*start nav*/
+  #nav {
+    margin: 0;
+    padding-left: 5%;
+    width: 100%;
+    min-height: 50px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    z-index: 1;
+  }
 
   #nav a:link {
-    width: 100%;
-    height: 3em;
-    display: block;
     text-decoration: none;
     color: white;
   }
@@ -74,506 +67,109 @@
     color: white;
   }
 
-  #nav li:hover {
-    background-color: #8080FF ;
+  .nav {
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 19px;
+
   }
 
-  #landing-nav-li {
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+  #nav-header {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 19px;
+    margin-right: 55%;
   }
 
-  #contact-nav-li {
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+  .nav h4 {
+    padding-top: 15px;
   }
-  /*landing*/
 
-  #landing {
-    padding: 0px;
-    margin: 0px;
-    height: 100vh;
-    min-height: 300px;
+  /*end nav*/
+
+  /*start header*/
+  #header {
+    min-height: 100vh;
     background: no-repeat center right fixed url('../resources/images/landing.jpg');
     background-size: cover;
-    text-align: center;
   }
 
+  /*end header*/
 
+  /*start about*/
 
-  #name {
-    text-align: center;
-    float: none;
-    display: inline-block;
-    height: 200px;
-    width: 65%;
-  }
-
-  #landing hr {
-    display: block;
-    width: 80%;
-  }
-
-  /*profile*/
-
-  #profile {
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    min-height: 500px;
-    width: 100%;
-    background-color: lavender;
-  }
-
-
-  #profile h2 {
-    text-align: center;
-    margin-top: 0px;
-    font-family: 'Open Sans';
-    color: #686466;
-    font-size: 56px;
-    margin-bottom: 15px;
-  }
-
-  #profile h3 {
-    font-size: 36px;
-    font-family: 'Open Sans';
-    color: #686466;
-  }
-
-  #profile h4 {
-    margin-top: 15px;
-    margin-bottom: 5px;
-    font-family: 'Open Sans 400';
-  }
-
-  #profile h5 {
-    margin-top: 0px;
-    font-family: 'Open Sans';
-  }
-
-  #profile p {
-    font-family: 'Open Sans';
-  }
-
-  #profile-content {
-    margin: 0 auto;
-    height: 400px;
-    width: 70%;
-  }
-
-  #profile hr {
-    display: block;
-    width: 70%;
-  }
-
-  #about-me {
-    width: 33.3%;
-    height: 400px;
-    float: left;
-    margin-top: -25px;
-    box-sizing: border-box;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-
-  #pic {
-    width: 33.3%;
-    height: 400px;
-    float: left;
-    text-align: center;
-    box-sizing: border-box;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-
-  #details {
-    width: 33.3%;
-    height: 400px;
-    float: left;
-    margin-top: -25px;
-    box-sizing: border-box;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-
-
-  #me {
-    width: 200px;
-    height: 200px;
-    border: grey 7px solid;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-  }
-
-  /*experience*/
-
-  #experience {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    background-color: white;
-  }
-
-  #experience p  {
-    margin-left: 50px;
-    font-family: 'Open Sans';
-  }
-
-  #experience h2 {
-    text-align: center;
-    font-family: 'Open Sans';
-    color: black;
-    font-size: 56px;
-    color: purple ;
-    margin-bottom: 15px;
-  }
-
-  #experience h4 {
-    font-family: 'Open Sans 400';
-    margin-bottom: 0px;
-    margin-top: 5px;
-    margin-left: 50px;
-    font-size: 22px;
-  }
-
-  .employee {
-    margin-left: 50px;
-    font-size: 20px;
-    font-family: 'Open Sans 400';
-    margin-top: 5px;
-    margin-bottom: 0px;
-  }
-
-  #experience h6 {
-    margin-left: 50px;
-    font-size: 16px;
-    font-family: 'Open Sans';
-    margin-top: 16px;
-    margin-bottom: 0px;
-  }
-
-  #experience ul {
-    font-family: 'Open Sans 400';
-    list-style: none;
-    padding-left: 0px;
-    margin-left: 50px;
-  }
-
-  #experience-master-title-div {
-    margin-top: 0px;
-    padding-top: 50px;
-  }
-
-  #hr-experience-master-title {
-    display: block;
-    width: 80%;
-  }
-
-  #skills {
-    width: 50%;
-    display: inline-block;
-    padding-left: 11%;
-    margin-left: 25%;
-  }
-
-  .experience-title-div {
-    width: 25%;
-    text-align: right;
-    padding-bottom: 0px;
-  }
-
-  .hr-experience-title {
-    display: inline-block;
-    height: 1px;
-    border: 1px solid;
-    border-color: #787878;
-    background-color: #787878;
-    width: 20%;
-    margin-left: 50px;
-  }
-
-  .experience-title {
-    margin-left: 50px;
-    font-family: 'Open Sans';
-    font-size: 36px;
-    color: purple;
-    margin-top: 20px;
-    margin-bottom: 0px;
-  }
-
-  .position {
-    margin-left: 50px;
-    font-size: 16px;
-    font-family: 'Open Sans 400';
-    margin-top: 5px;
-    margin-bottom: 0px;
-  }
-
-  #dbc {
-    width: 100%;
-    padding-top: 30px;
-  }
-
-  #dbc-title {
-    width: 25%;
-    text-align: right;
-    float: left;
-  }
-
-  #dbc-summary {
-    width: 50%;
-    display: inline-block;
-    padding-left: 11%;
-  }
-
-  #twok {
-    width: 100%;
-    padding-top: 30px;
-  }
-
-  #twok-title {
-    width: 25%;
-    text-align: right;
-    float: left;
-  }
-
-  #twok-summary {
-    width: 50%;
-    display: inline-block;
-    padding-left: 11%;
-  }
-
-  #KGO {
-    width: 100%;
-    padding-top: 30px;
-  }
-
-  #KGO-title {
-    width: 25%;
-    text-align: right;
-    float: left;
-  }
-
-  #KGO-summary {
-    width: 50%;
-    display: inline-block;
-    padding-left: 11%;
-  }
-
-  #education {
+  #about {
     padding-bottom: 50px;
   }
 
-  #ups {
-    width: 100%;
-  }
-
-  #ups-title {
-    width: 25%;
-    text-align: right;
+  #about-picture {
+    width: 50%;
     float: left;
   }
 
-  #ups-summary {
-    width: 50%;
-    display: inline-block;
-    padding-left: 11%;
-  }
-
-  /*projects*/
-
-  #projects {
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    min-height: 500px;
-    width: 100%;
-    background-color: #B1E1E9;
-    overflow: hidden;
-  }
-
-
-  #projects h2 {
-    text-align: center;
-    font-family: 'Open Sans';
-    color: black;
-    font-size: 56px;
-    color: teal;
-    margin-bottom: 15px;
-  }
-
-  #projects p {
-    margin-left: 26.5%;
-  }
-
-  #projects h3 {
-    margin-left: 26.5%;
-  }
-
-  #projects hr {
-    width: 80%;
-    display: block;
-  }
-
-  #projects img {
-    width: 350px;
+  #picture {
+    padding-top: 50px;
+    width: 250px;
     height: 250px;
   }
 
-  #project-column-one {
-    width: 50%;
-    padding-top: 20px;
-    float: left;
-    margin-bottom: 75px;
-  }
+  /*end about*/
 
-  #project-column-two {
-    width: 50%;
-    padding-top: 20px;
-    float: left;
-    margin-bottom: 75px;
-  }
+  /*start projects*/
 
-  #project-one {
-    text-align: right;
-    padding-right: 10px;
-  }
-
-  #project-two {
-    text-align: left;
-    padding-left: 10px;
+  #projects {
+    background-color: #f6f6f6;
+    padding-bottom: 50px;
   }
 
   #projects a {
-    display: inline-block;
-    height: auto;
+    display: block;
+    height: 210px;
+    width: 280px;
   }
 
-  #shape-tango-div {
-    width: 350px;
-    height: 250px;
-    float: right;
-    padding-right: 10px;
-    position: relative;
+  #col-1 {
+    margin-right: auto;
   }
 
-
-  #shape-tango-div:after {
-    width: 350px;
-    height: 250px;
-    font-family: 'Open Sans 400';
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    content:'Shape Tango is a small project to practice animation in HTML canvas. It is modeled after a project done with Kinetic.js, but without using said library.';
-    position:absolute;
-    top:0; left:0;
-    background:rgba(128,0,128,0.95);
-    opacity:0;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
+  #col-2 {
+    margin: auto;
   }
 
-  #shape-tango-div:hover:after {
-    opacity:1;
+  #col-3 {
+    margin-left: auto;
   }
 
-  #color-influence-div {
-    width: 350px;
-    height: 250px;
-    float: left;
-    position: relative;
-  }
-
-  #color-influence-div:after {
-    width: 350px;
-    height: 250px;
-    font-family: 'Open Sans 400';
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    position: absolute;
-    content:'Color Influence is a simple project to practice manipulating DOM elements. Clicking on a sqaure will turn its neighbors closer to the original color of the sqaure being clicked.';
-    top:0; left:0;
-    background:rgba(128,0,128,0.95);
-    opacity:0;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-  }
-
-  #color-influence-div:hover:after {
-    opacity:1;
-  }
-
-  #color-influence {
+  .project-image {
     width: 100%;
-
+    height: 100%;
   }
 
+  /*end projects*/
 
-  /*contact*/
+  /*start contact*/
 
   #contact {
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    min-height: 500px;
-    width: 100%;
-    background-color: #839CB5;
+    min-height: 80vh;
+    padding-top: 20vh;
   }
 
-  .title {
-    margin-left: 50px;
-    font-family: 'Open Sans';
-    font-size: 36px;
-    color: grey;
-  }
-
-
-  #contact-title {
-    padding-top: 50px;
-    margin-top: 0px;
+  #contact a {
     text-align: center;
-    margin-bottom: 15px;
-
-  }
-  #contact-hr {
-    text-align: center;
-    width: 80%;
   }
 
-  #links {
-    margin-top: 100px;
-    width: 80%;
-    margin: 0 auto;
+  #contact a:link {
+    text-decoration: none;
+    color: black;
   }
 
-
-  #linkedin {
-    display: inline-block;
-    background: url('../resources/images/linkedin.png') no-repeat;
-    height: 32px;
-    width: 32px;
-    margin-right: 5px;
-    vertical-align: middle;
+  #contact a:hover {
+    color: black;
   }
 
-  #links a {
-    font-size: 16px;
-  }
-
-  #links a:link {
-    color: white;
-  }
-
-  #links a:visited {
-    color: white;
-  }
-
-  #links a:hover {
-    color: grey;
+  #contact a:visited {
+    color: black;
   }
 
   #github {
@@ -581,29 +177,8 @@
     background: url('../resources/images/github.png') no-repeat;
     height: 32px;
     width: 32px;
+    margin-bottom: -10px;
     margin-right: 5px;
-    vertical-align: middle;
-  }
-
-
-  #first-column {
-    float: left;
-    width: 50%;
-  }
-
-  #first-column li {
-    margin-top: 10px;
-  }
-
-  #second-column {
-    float: right;
-    width: 50%;
-  }
-
-  #second-column li {
-    margin-left: 5%;
-    margin-top: 10px;
-
   }
 
   #email {
@@ -611,8 +186,31 @@
     background: url('../resources/images/email.png') no-repeat;
     height: 32px;
     width: 32px;
+    margin-bottom: -10px;
     margin-right: 5px;
-    vertical-align: middle;
+  }
+
+  #resume {
+    display: inline-block;
+    background: url('../resources/images/file.png') no-repeat;
+    height: 32px;
+    width: 32px;
+    margin-bottom: -10px;
+    margin-right: 5px;
+  }
+
+  .mid {
+    width: 33%;
+    margin: auto;
+    text-align: center;
+    padding-top: 200px;
+  }
+
+  #twitter {
+    display: inline-block;
+    background: url('../resources/images/twitter.png') no-repeat;
+    height: 32px;
+    width: 32px;
   }
 
   #facebook {
@@ -620,21 +218,48 @@
     background: url('../resources/images/facebook.png') no-repeat;
     height: 32px;
     width: 32px;
-    margin-right: 5px;
-    vertical-align: middle;
   }
 
-  #links {
-    padding-bottom: 200px;
+  #linkedin {
+    display: inline-block;
+    background: url('../resources/images/linkedin.png') no-repeat;
+    height: 32px;
+    width: 32px;
   }
 
-  #links li {
-    color: white;
-    font-family: sans-serif;
+  /*end contact*/
+
+  /*start resume*/
+
+  #experience h1 {
+    text-align: left;
+    color: black;
+    margin: 0;
+    padding-top: 50px;
   }
 
-  #bottom {
-    width: 80%;
+  #experience h2 {
+    text-align: left;
+    padding-top: 30px;
   }
 
+  #experience h3 {
+    text-align: left;
+    padding-bottom: 0;
+  }
+
+
+  #experience h4 {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  #experience h5 {
+    padding-top: 20px;
+    margin: 0;
+  }
+
+  #education h4 {
+    padding-top: 30px;
+  }
 }
